@@ -1,0 +1,16 @@
+server:
+  port: 8080
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7900/eureka
+    #默认30,
+    registry-fetch-interval-seconds: 30
+  instance:
+    #默认30s，更新租约的时间戳
+    #
+    lease-renewal-interval-in-seconds: 30
+
+spring:
+  application:
+    name: api-passenger
